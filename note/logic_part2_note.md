@@ -140,6 +140,17 @@ A boring day. 烦恼的一天
 > 而一些名词的量化单位被约定俗成的固定了，比如咖啡的单位是一杯，车的单位是辆，这些名词就被成为可数名词  
 > 有一些名词即可数又不可数，比如water,表示水的时候不可数，表示水系的时候可数
 
+集合名词的单复数问题
+> family ,team,class 单数指整体状态，复数则是表示每个成员都是这个状态
+> his family is rich 他们家有钱
+> his family are rich 他们家的人都有钱
+
+主谓一致
+> 其实是按语义逻辑区分
+> The singer and dancer __is__ going to give us a performance
+> What you see and what you know ( ) not always the same
+
+
 ### 练习
 >  **例句**：You have all heard that men of science work by means of induction and deduction，that by the help of these operations，they，in a sort of sense，manage to extract from Nature certain natural laws ，and that out of these laws，by some special skill of their own，they build up their theories about the running of our world
 
