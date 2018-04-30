@@ -1,0 +1,37 @@
+# REDIS (RedisProperties)
+spring:
+  redis:
+    ## prefix
+    prefix: "template:" #(TODO 根据具体服务名称配置,注意带':')
+    ## Redis数据库索引（默认为0）
+    database: 0
+    # 非哨兵模式配置
+    ## Redis服务器地址
+    host: 172.24.4.131 #(TODO redis host)
+    ## Redis服务器连接端口
+    port: 30379 #(TODO redis port)
+    ## Redis服务器连接密码（默认为空）
+    password: kdcos_admin #(TODO redis password,无则不填)
+    ## 连接超时时间（毫秒）
+    timeout: 1800
+    pool:
+      ## 连接池最大连接数（使用负值表示没有限制）
+      max-active: 2000
+      ## 连接池最大阻塞等待时间（使用负值表示没有限制）
+      max-wait: 30000
+      ## 连接池中的最大空闲连接
+      max-idle: 200
+      ## 连接池中的最小空闲连接
+      min-idle: 0
+      ## 自定义属性
+    custom:
+      ### 缓存过期时间(单位:秒)
+      expire-time: 1800
+      ### redis最大出队列size
+      pop-size: 300
+
+      #哨兵模式
+#    sentinel:
+#      master: default
+#      nodes: 172.24.4.3:26379,172.24.4.5:26379,172.24.4.7:26379
+

@@ -1,0 +1,13 @@
+<component name="libraryTable">
+  <library name="Maven: javax.validation:validation-api:1.0-SNAPSHOT.Final">
+    <CLASSES>
+      <root url="jar://$MAVEN_REPOSITORY$/javax/validation/validation-api/1.0-SNAPSHOT.Final/validation-api-1.0-SNAPSHOT.Final.jar!/" />
+    </CLASSES>
+    <JAVADOC>
+      <root url="jar://$MAVEN_REPOSITORY$/javax/validation/validation-api/1.0-SNAPSHOT.Final/validation-api-1.0-SNAPSHOT.Final-javadoc.jar!/" />
+    </JAVADOC>
+    <SOURCES>
+      <root url="jar://$MAVEN_REPOSITORY$/javax/validation/validation-api/1.0-SNAPSHOT.Final/validation-api-1.0-SNAPSHOT.Final-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>

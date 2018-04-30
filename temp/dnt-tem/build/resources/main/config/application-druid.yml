@@ -1,0 +1,45 @@
+# datasource配置
+## 数据源
+spring:
+  datasource:
+    type: com.alibaba.druid.pool.DruidDataSource
+    #############################################
+    ## druid datasource配置
+    #############################################
+    ### base source(primary)
+    ########################
+    druid:
+      name: default-datasource #(TODO datasource name)
+      driver-class-name: ${spring.datasource.driver-class-name}
+      url: ${spring.datasource.url}
+      username: ${spring.datasource.username}
+      password: ${spring.datasource.password}
+      #############################################
+      ## 基本配置
+      ### 初始化大小，最小，最大
+      initialSize:  ${DATASOURCE_INITIAL_SIZE:20}
+      minIdle: ${DATASOURCE_MIN_IDLE:20}
+      maxActive: ${DATASOURCE_MAX_ACTIVE:100}
+      ### 配置获取连接等待超时的时间
+      maxWait: ${DATASOURCE_MAX_WAIT:2000}
+      ### 配置间隔多久才进行一次检测，检测需要关闭的空闲连接，单位是毫秒
+      timeBetweenEvictionRunsMillis: 60000
+      ### 超过时间限制是否回收
+      removeAbandoned: true
+      ### 超时时间(秒)
+      removeAbandonedTimeout: 180
+      ### 关闭abanded连接时输出错误日志
+      logAbandoned: true
+      ### 配置一个连接在池中最小生存的时间，单位是毫秒
+      minEvictableIdleTimeMillis: 300000
+      validationQuery: SELECT 1 FROM DUAL
+      testWhileIdle: true
+      testOnBorrow: false
+      testOnReturn: false
+      ### 打开PSCache，并且指定每个连接上PSCache的大小
+      poolPreparedStatements: true
+      maxPoolPreparedStatementPerConnectionSize: 30
+      ### 配置监控统计拦截的filters，去掉后监控界面sql无法统计，'wall'用于防火墙
+      filters: stat
+      ### 通过connectProperties属性来打开mergeSql功能；慢SQL记录
+      connectionProperties: druid.stat.mergeSql=true;druid.stat.slowSqlMillis=5000

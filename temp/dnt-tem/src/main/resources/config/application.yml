@@ -1,0 +1,31 @@
+server:
+  port: 8080 #(TODO application port)
+
+spring:
+  application:
+    name: template #(TODO application name)
+    id: 101 # 服务id,用于响应体response code(自定义属性) (TODO 改成自己服务的id)
+    debug: true # 自定义debug模式,暂未用到(自定义属性)
+  profiles:
+    active: druid,redis,mysql #application profiles
+  http:
+    encoding:
+      force: true
+  jackson:
+    date-format: yyyy-MM-dd HH:mm:ss
+    time-zone: GMT+8
+
+management:
+  security:
+    enabled: false
+
+endpoints:
+  restart:
+    enabled: true
+  shutdown:
+    enabled: true
+    sensitive: false
+  health:
+    sensitive: false
+
+

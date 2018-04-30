@@ -1,0 +1,9 @@
+spring:
+  datasource:
+    ip: 172.24.4.99 #(TODO mysql ip)
+    port: 3306 #(TODO mysql port)
+    database: mysql #(TODO mysql database)
+    url: jdbc:mysql://${spring.datasource.ip}:${spring.datasource.port}/${spring.datasource.database}?zeroDateTimeBehavior=convertToNull&useUnicode=true&characterEncoding=utf-8&autoReconnect=true&allowMultiQueries=true&useSSL=false
+    username: root #(TODO mysql username)
+    password: root #(TODO mysql password)
+    driver-class-name: com.mysql.jdbc.Driver
